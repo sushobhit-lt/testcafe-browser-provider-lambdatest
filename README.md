@@ -70,7 +70,17 @@ Use the following environment variables to set additional configuration options:
 
  - `LT_TEST_NAME` - Test name on LambdaTest.
  - `LT_BUILD` - Build name on LambdaTest.
+ - `LT_GRID_URL` - Optional to set the LambdaTest Grid URL  
+
+    ```js
+    export LT_GRID_URL=us-west-1-hub.lambdatest.com
+    export LT_GRID_URL=eu-central-1-hub.lambdatest.com
+
+    ```
  - `LT_CAPABILITY_PATH` - Path to a file which contains additional capability options as JSON file (eg. config.json)
+    ```js
+    export LT_CAPABILITY_PATH=config.json
+    ```
 
     ```js
     {
@@ -87,6 +97,15 @@ Use the following environment variables to set additional configuration options:
  - `LT_VERBOSE` - true or false.
  - `LT_W3C` - true or false.
  - `LT_ENABLE_TRACE` - true or false.
+
+    ```js
+    export LT_ENABLE_TRACE=true
+    ```
+ - `LT_SAFARI_COOKIES` - To set cookies for safari browser , use true or false.
+
+    ```js
+    export LT_SAFARI_COOKIES=true
+    ```
  - `LT_PROXY_HOST` - Hostname/IP of proxy, this is a mandatory value.
  - `LT_PROXY_PORT` - Port for the proxy, by default it would consider 3128 if proxyhost is used For Basic Authentication, we use the below proxy options.
  - `LT_PROXY_USER` - Username for connecting to proxy, mandatory value for using 'proxypass'.
